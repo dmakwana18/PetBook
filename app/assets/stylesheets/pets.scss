@@ -1,0 +1,55 @@
+// Place all the styles related to the Pets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+input[type=text] {
+    width: 25%;
+    padding: 24px 24px;
+    border: 2px solid #ccc;
+    background-color: #B2F7FF;
+}
+
+input[type=pet_Type] {
+    width: 25%;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: #B2F7FF;
+}
+
+input[type=petSpecies] {
+    width: 25%;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: #B2F7FF;
+}
+
+input[type=age] {
+    width: 25%;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: #B2F7FF;
+}
+
+input[type=gender] {
+    width: 25%;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: #B2F7FF;
+}
+
+textarea {
+    width: 40%;
+    height: 50px;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: #FBFF00;
+    resize: none;
+}
+
+textarea[type=description]{
+    width: 40%;
+    height: 40px;
+    padding: 50px 24px;
+    border: 2px solid #ccc;
+    background-color: #FBFF00;
+    resize: none;
+}
