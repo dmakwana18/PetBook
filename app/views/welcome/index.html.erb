@@ -9,10 +9,10 @@
      
 </div>
  <div class="addPet">
-     <%= link_to 'Add pet', controller: 'pets', url: new_pet_path %>
+     <%= button_to 'Add pet', new_pet_path,  :method => "get" %>
 </div>
 <div class="viewPet">
-     <%= link_to 'View Pet List', controller: 'pets' %>
+     <%= button_to 'View Pet List', pets_path, :method => "get" %>
 </div>
 
 </div>
