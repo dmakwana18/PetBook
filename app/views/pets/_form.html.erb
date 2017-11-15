@@ -1,0 +1,72 @@
+<%= form_for :pet, url: new_pet_path do |f| %>
+ 
+
+
+ <div class="name"
+     <<%= f.label :name %><br>
+     <%= f.text_field :name %>
+</div>
+  
+  
+  <div class="pettype"
+     <<%= f.label :pet_type %><br>
+     <%= f.text_field :pet_type %>
+</div>
+  
+ <div class="petspecies"
+     <<%= f.label :pet_species %><br>
+     <%= f.text_field :pet_species %>
+</div>
+  
+ <div class="age"
+     <<%= f.label :age %><br>
+     <%= f.text_field :age %>
+</div>
+  
+ <div class="gender"
+     <<%= f.label :gender %><br>
+     <%= f.text_field :gender %>
+</div>
+  
+ 
+  <div class="traits"
+     <<%= f.label :traits %><br>
+     <%= f.text_area :traits %>
+</div>
+  
+  
+ <div class="description"
+     <<%= f.label :description %><br>
+     <%= f.text_area :description %>
+</div>
+  
+ 
+ <div class="owner"
+     <<%= f.label :owner %><br>
+     <%= f.text_field :owner %>
+</div>
+  
+   
+ <div class="number"
+     <<%= f.label :number %><br>
+     <%= f.text_field :number %>
+</div>
+  
+   
+ <div class="email"
+     <<%= f.label :email %><br>
+     <%= f.text_field :email %>
+</div>
+  
+  
+  <p>
+    <%= f.submit %>
+  </p>
+  
+  
+  <div class="city"
+     <<%= f.label :city %><br>
+     <%= f.text_field :city %>
+</div>
+  
+<% end %>

@@ -1,42 +1,12 @@
+  
+  
+<div class="headerAddPet" >
 <h1>Add the pet info</h1>
+</div>
 
-<%= form_for :pet, url: pets_path do |f| %>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
-  
-  <p>
-    <%= f.label :pet_Type %><br>
-    <%= f.text_field :pet_Type %>
-  </p>
-  
-  <p>
-    <%= f.label :pet_Species %><br>
-    <%= f.text_field :pet_Species %>
-  </p>
-  
-  <p>
-    <%= f.label :age %><br>
-    <%= f.text_field :age %>
-  </p>
-  
-  <p>
-    <%= f.label :gender %><br>
-    <%= f.text_field :gender %>
-  </p>
+
+<%= render 'form' %>
+
+ <%= link_to 'Back', root_path %>
  
-  <p>
-    <%= f.label :traits %><br>
-    <%= f.text_area :traits %>
-  </p>
-  
-  <p>
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </p>
- 
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+ </div>

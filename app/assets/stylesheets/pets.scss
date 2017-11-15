@@ -1,55 +1,216 @@
 // Place all the styles related to the Pets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-input[type=text] {
-    width: 25%;
-    padding: 24px 24px;
-    border: 2px solid #ccc;
-    background-color: #B2F7FF;
+.headerAddPet{
+    position:absolute;
+    top: 5%;
+    left: 50%;
+    
+    z-index: 2;
+    transform: translate(-50%, -50%);
 }
 
-input[type=pet_Type] {
-    width: 25%;
+label{
+  width: 4em;
+  float: left;
+  text-align: right;
+  margin-right: 0.5em;
+  display: block
+}
+.name{
+    position:absolute;
+    top: 15%;
+    left: 20%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin-top: -4px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 55px;
+    width: 10%;
     padding: 12px 12px;
     border: 2px solid #ccc;
-    background-color: #B2F7FF;
-}
-
-input[type=petSpecies] {
-    width: 25%;
+    background-color: #FBFF00;
+    margin-bottom: -5px;
+ }
+ .pettype{
+    position:absolute;
+    top: 25%;
+    left: 20%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin-top: -4px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 55px;
+    width: 10%;
     padding: 12px 12px;
     border: 2px solid #ccc;
-    background-color: #B2F7FF;
-}
-
-input[type=age] {
-    width: 25%;
+    background-color: #FBFF00;
+    margin-bottom: -5px;
+ }
+ .petspecies{
+    position:absolute;
+    top: 35%;
+    left: 20%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin-top: -4px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 55px;
+    width: 10%;
     padding: 12px 12px;
     border: 2px solid #ccc;
-    background-color: #B2F7FF;
-}
-
-input[type=gender] {
-    width: 25%;
+    background-color: #FBFF00;
+    margin-bottom: -5px;
+ }
+ .age{
+    position:absolute;
+    top: 45%;
+    left: 12%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin-top: -4px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 55px;
+    width: 10%;
     padding: 12px 12px;
     border: 2px solid #ccc;
-    background-color: #B2F7FF;
-}
-
-textarea {
-    width: 40%;
-    height: 50px;
+    background-color: #FBFF00;
+    margin-bottom: -5px;
+ }
+ .gender{
+    position:absolute;
+    top: 45%;
+    left: 27%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin-top: -4px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 55px;
+    width: 10%;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: #FBFF00;
+    margin-bottom: -5px;
+ }
+ .traits{
+    position:absolute;
+    top: 70%;
+    left: 10%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin-top: -4px;
+    font-size: 16px;
+    margin-left: 55px;
+    margin-bottom: -5px;
+    width: 300px;
+    height: 300px;
     padding: 12px 12px;
     border: 2px solid #ccc;
     background-color: #FBFF00;
     resize: none;
-}
-
-textarea[type=description]{
-    width: 40%;
-    height: 40px;
-    padding: 50px 24px;
+ }
+ .description{
+    position:absolute;
+    top: 70%;
+    left: 29%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin-top: -4px;
+    font-size: 16px;
+    margin-left: 55px;
+    margin-bottom: -5px;
+    width: 300px;
+    height: 300px;
+    padding: 12px 12px;
     border: 2px solid #ccc;
     background-color: #FBFF00;
     resize: none;
-}
+ }
+ .owner{
+    position:absolute;
+    top: 15%;
+    left: 75%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin-top: -4px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 55px;
+    width: 10%;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: #FBFF00;
+    margin-bottom: -5px;
+ }
+ .number{
+    position:absolute;
+    top: 25%;
+    left: 75%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin-top: -4px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 55px;
+    width: 10%;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: #FBFF00;
+    margin-bottom: -5px;
+ }
+ .email{
+    position:absolute;
+    top: 35%;
+    left: 75%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin-top: -4px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 55px;
+    width: 10%;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: #FBFF00;
+    margin-bottom: -5px;
+ }
+ 
+
+ .city{
+    position:absolute;
+    top: 45%;
+    left: 75%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    margin-top: -4px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 55px;
+    width: 10%;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: #FBFF00;
+    margin-bottom: -5px;
+ }
+
+input[type=button], input[type=submit]{
+    position:absolute;
+    top: 85%;
+    left: 85%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    background-color: #01FFFF;
+    float: right;
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 25px 40px;
+    text-decoration: none;
+    cursor: pointer;
+ }
+ 
