@@ -2,7 +2,21 @@
  <%= link_to 'New Pet', new_pet_path %>
 <table>
   <tr>
-    
+    <th>Type</th>
+    <th>Species</th>
+    <th>Age</th>
+    <th>Gender</th>
   </tr>
  
+  <% @pet.each do |pet| %>
+    <tr>
+      <td><%= pet.pet_type %></td>
+      <td><%= pet.pet_species %></td>
+      <td><%= pet.age %></td>
+      <td><%= pet.gender %></td>
+      <td><%= link_to 'Show', pet_path(pet) %></td>
+    </tr>
+  <% end %>
+</table>
+thumbsup 0
 

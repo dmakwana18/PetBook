@@ -13,6 +13,10 @@ class PetsController < ApplicationController
         redirect_to @pet
     end
     
+    def index
+        @pet = Pet.all
+    end
+    
 end
 
 private 
