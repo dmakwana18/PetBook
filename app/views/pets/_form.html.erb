@@ -13,6 +13,11 @@
      <%= f.text_field :pet_type %>
 </div>
  
+ <div class="traits"
+     <<%= f.label :traits %><br>
+     <%= f.text_field :traits %>
+</div>
+ 
  <div class="petspecies"
      <<%= f.label :pet_species %><br>
      <%= f.text_field :pet_species %>
@@ -29,10 +34,7 @@
 </div>
   
  
-  <div class="traits"
-     <<%= f.label :traits %><br>
-     <%= f.text_area :traits %>
-</div>
+  
   
   
  <div class="description"
@@ -58,15 +60,16 @@
      <%= f.text_field :email %>
 </div>
   
-  <div class="button">
-  <p>
-    <%= f.submit %>
-  </p>
-  </div>
+  
   
   <div class="city"
      <<%= f.label :city %><br>
      <%= f.text_field :city %>
 </div>
 
+<div class="button">
+  <p>
+    <%= f.submit %>
+  </p>
+  </div>
 <% end %>

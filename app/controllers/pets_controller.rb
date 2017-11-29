@@ -17,5 +17,5 @@ end
 
 private 
 def pet_params
-    params.require(:pet).permit(:name, :pettype)
+    params.require(:pet).permit(:name, :pet_type, :traits,:pet_species, :age, :gender, :description, :owner, :number, :email, :city)
 end
