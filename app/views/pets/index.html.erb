@@ -15,6 +15,7 @@
       <td><%= pet.age %></td>
       <td><%= pet.gender %></td>
       <td><%= link_to 'Show', pet_path(pet) %></td>
+      <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
     </tr>
   <% end %>
 </table>
