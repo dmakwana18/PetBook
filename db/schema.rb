@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171129203921) do
+ActiveRecord::Schema.define(version: 20171202203459) do
+
+  create_table "owners", force: :cascade do |t|
+    t.text "owner"
+    t.integer "pet_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["pet_id"], name: "index_owners_on_pet_id"
+  end
 
   create_table "pets", force: :cascade do |t|
     t.text "name"
@@ -22,7 +30,6 @@ ActiveRecord::Schema.define(version: 20171129203921) do
     t.text "pet_species"
     t.text "traits"
     t.text "description"
-    t.text "owner"
     t.text "number"
     t.text "email"
     t.text "city"
