@@ -39,8 +39,8 @@ group :test do
   gem 'cucumber'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
-  gem 'rspec-expectations'
-  #gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
+  gem 'rspec-rails'
+  gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
 end
 
 group :development do
