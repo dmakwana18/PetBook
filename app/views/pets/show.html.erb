@@ -1,3 +1,7 @@
+<h2>
+    <strong>Pet Profile</strong>
+</h2>
+
 <p class="viewName">
     <strong>Name:</strong>
     <%= @pet.name %>
@@ -34,8 +38,8 @@
 </p>
 
 <p class="viewOwner">
-    <strong>Owner:</strong>
-    <%= @pet.owner %>
+<strong>Owner:</strong>
+<%= @pet.owner %>
 </p>
 
 <p class="viewPhoneNumber">
@@ -52,5 +56,13 @@
     <strong>City:</strong>
     <%= @pet.city %>
 </p>
+
+
+<h2>Comments</h2>
+<%= render @pet.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
 
 <td><%= link_to 'Pet List', pets_path %></td>
