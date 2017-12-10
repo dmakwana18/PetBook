@@ -1,6 +1,20 @@
 // Place all the styles related to the Pets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.grass {
+    background-color:white;
+    background-image: url("http://www.desktopwallpaperhd.net/wallpapers/11/7/grassy-hill-ryanstfu-113639.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back {
+    background-color:white;
+    background-image: url("https://appanashapetclinic.com/clients/8278/images/slideshows/63662/dreamstime_xl_47357452.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .headerAddPet{
     position:absolute;
     top: 5%;
@@ -32,6 +46,7 @@ label{
     border: 2px solid #ccc;
     background-color: #FBFF00;
     margin-bottom: -5px;
+    
  }
  .pettype{
     position:absolute;
@@ -150,7 +165,7 @@ label{
     margin-bottom: -5px;
  }
  .number{
-    position:absolute;
+   position:absolute;
     top: 30%;
     left: 75%;
     z-index: 2;
@@ -218,7 +233,7 @@ input[type=button], input[type=submit]{
  }
  
  .viewName {
-     position:absolute;
+    position:absolute;
      color :black;
      top: 20%;
      left: 20%;

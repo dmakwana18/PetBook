@@ -2,14 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
+.home{
     background-color:white;
+    background-image: url("https://appanashapetclinic.com/clients/8278/images/slideshows/63662/dreamstime_xl_47357452.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
-.container{
-    position:relative;
-    text-align:center;
-}
+//.container{
+//    position:relative;
+//    text-align:center;
+//}
 
 .header{
     position:absolute;
