@@ -10,26 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171202203459) do
+ActiveRecord::Schema.define(version: 20171205034947) do
 
-  create_table "owners", force: :cascade do |t|
-    t.text "owner"
+  create_table "comments", force: :cascade do |t|
+    t.string "commenter"
+    t.text "body"
     t.integer "pet_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["pet_id"], name: "index_owners_on_pet_id"
+    t.index ["pet_id"], name: "index_comments_on_pet_id"
   end
 
   create_table "pets", force: :cascade do |t|
     t.text "name"
-    t.text "age"
-    t.text "gender"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.text "pet_type"
     t.text "pet_species"
+    t.text "age"
+    t.text "gender"
     t.text "traits"
     t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "owner"
     t.text "number"
     t.text "email"
     t.text "city"
