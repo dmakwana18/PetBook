@@ -10,11 +10,6 @@
     
 }
 
-//.container{
-//    position:relative;
-//    text-align:center;
-//}
-
 .header{
     position:absolute;
     top: 42%;
@@ -24,7 +19,7 @@
     transform: translate(-50%, -50%);
 }
 
-.addPet{
+.addPet {
     position:absolute;
     z-index: 2;
     top: 50%;
@@ -32,13 +27,13 @@
     transform: translate(-50%, -50%);
 }
 
-.viewPet{
+.viewPet {
     position:absolute;
     z-index: 2;
     top: 58%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
-    background-color: #FFFFFF;
+    //background-color: #FFFFFF;
 }
 
 

@@ -352,3 +352,12 @@ input[type=button], input[type=submit]{
      border: 2px solid #ccc;
      background-color: #FBFF00;
 }
+
+.error {
+    position: absolute;
+    color: black;
+    top: 120%;
+    left: 10%;
+    transform: tranlate(-50%,-50%);
+    
+}
