@@ -1,6 +1,6 @@
 <html class="grass">
 <%= form_for @pet do |f| %>
-
+<div class="error">
   <% if @pet.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -14,7 +14,7 @@
       </ul>
     </div>
   <% end %>
- 
+ </div>
  <div class="name"
      <<%= f.label :name %><br>
      <%= f.text_field :name %>
