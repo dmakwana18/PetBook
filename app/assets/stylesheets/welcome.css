@@ -3,6 +3,8 @@
   background-image: url("https://appanashapetclinic.com/clients/8278/images/slideshows/63662/dreamstime_xl_47357452.jpg");
   background-repeat: no-repeat;
   background-size: cover; 
+  filter: alpha(Opacity=40);
+  opacity: 1.0;
 }
 
 .header {
@@ -18,6 +20,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 34px;
   
 }
 
@@ -27,10 +30,10 @@
   top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+  font-size: 34px;
 }
-
-.viewPet:hover {background-color: #3e8e41}
+.addPet:hover {background-color: lightgreen}
+.viewPet:hover {background-color: lightgreen}
 
 
 /*# sourceMappingURL=welcome.css.map */
