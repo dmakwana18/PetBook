@@ -1,16 +1,16 @@
 <div class="container">
 
-<html class="home">
+<html class="home"></html>
  
  <div class="header">
          <h1>Petbook</h1>
      
 </div>
  <div class="addPet">
-     <%= button_to 'Add pet', new_pet_path,  :method => "get" %>
+     <%= link_to 'Add pet', new_pet_path,  :method => "get" %>
 </div>
 <div class="viewPet">
-     <%= button_to 'View Pet List', pets_path, :method => "get" %>
+     <%= link_to 'View Pet List', pets_path, :method => "get" %>
 </div>
 
 </div>
