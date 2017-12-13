@@ -9,15 +9,17 @@
 
 .header {
   position: absolute;
-  top: 42%;
+  top: 44%;
   left: 50%;
   z-index: 2;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%); 
+  font-size: 30px;
+}
 
 .addPet {
   position: absolute;
   z-index: 2;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 34px;
@@ -27,7 +29,7 @@
 .viewPet {
   position: absolute;
   z-index: 2;
-  top: 58%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 34px;
