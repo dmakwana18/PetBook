@@ -1,29 +1,37 @@
-<html class="grass">
-<h1>Listing pets</h1>
- <%= link_to 'New Pet', new_pet_path %>
-<table>
-  <tr>
-    <th>Type</th>
-    <th>Species</th>
-    <th>Age</th>
-    <th>Gender</th>
-  </tr>
- 
-  <% @pet.each do |pet| %>
+<html class="grass"></html>
+<div class="indexPage">
+  <h1>Listing pets</h1>
+</div>
+<div class="addPetLink">
+   <%= link_to 'New Pet', new_pet_path %>
+</div>
+<div class="table">   
+  <table>
     <tr>
-      <td><%= pet.pet_type %></td>
-      <td><%= pet.pet_species %></td>
-      <td><%= pet.age %></td>
-      <td><%= pet.gender %></td>
-      <td><%= link_to 'Show', pet_path(pet) %></td>
-      <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
-      <td><%= link_to 'Destroy',
-                              pet_path(pet),
-                              method: :delete,
-                              data: {confirm: 'Are you sure?' } %></td>
+      <th>Type</th>
+      <th>Species</th>
+      <th>Age</th>
+      <th>Gender</th>
     </tr>
-  <% end %>
-</table>
-
+   
+    <% @pet.each do |pet| %>
+      <tr>
+        <td><%= pet.pet_type %></td>
+        <td><%= pet.pet_species %></td>
+        <td><%= pet.age %></td>
+        <td><%= pet.gender %></td>
+        <td><%= link_to 'Show', pet_path(pet) %></td>
+        <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
+        <td><%= link_to 'Destroy',
+                                pet_path(pet),
+                                method: :delete,
+                                data: {confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+  
+</div>
+<div class="backLink">
  <%= link_to 'Back to Welcome Page', root_path%>
-
+</div>

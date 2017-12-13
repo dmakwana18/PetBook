@@ -1,8 +1,9 @@
-<html class="grass">
-<h2>
-    <strong>Pet Profile</strong>
-</h2>
-
+<html class="grass"></html>
+<div class="heading">
+    <h2>
+        <strong>Pet Profile</strong>
+    </h2>
+</div>
 <p class="viewName">
     <strong>Name:</strong>
     <%= @pet.name %>
@@ -67,5 +68,6 @@
     <h2>Add a comment:</h2>
     <%= render 'comments/form' %>
 </div>
-
-<td><%= link_to 'Pet List', pets_path %></td>
+<div class="backLink">
+    <td class="backLink"><%= link_to 'Pet List', pets_path %></td>
+</div>
