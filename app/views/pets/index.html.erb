@@ -6,26 +6,29 @@
    <%= link_to 'New Pet', new_pet_path %>
 </div>
 <div class="table">   
-  <table>
+  <table id="tableList">
     <tr>
-      <th>Type</th>
-      <th>Species</th>
-      <th>Age</th>
-      <th>Gender</th>
+      <th><font size="5">Type</font></th>
+      <th><font size="5">Species</font></th>
+      <th><font size="5">Age</font></th>
+      <th><font size="5">Gender</font></th>
+      <th><font size="5">Show</font></th>
+      <th><font size="5">Edit</font></th>
+      <th><font size="5">Destroy</font></th>
     </tr>
    
     <% @pet.each do |pet| %>
       <tr>
-        <td><%= pet.pet_type %></td>
-        <td><%= pet.pet_species %></td>
-        <td><%= pet.age %></td>
-        <td><%= pet.gender %></td>
-        <td><%= link_to 'Show', pet_path(pet) %></td>
-        <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
-        <td><%= link_to 'Destroy',
+        <td><font size="4"><%= pet.pet_type %></font></td>
+        <td><font size="4"><%= pet.pet_species %></font></td>
+        <td><font size="4"><%= pet.age %></font></td>
+        <td><font size="4"><%= pet.gender %></font></td>
+        <td><font size="4"><%= link_to 'Show', pet_path(pet) %></font></td>
+        <td><font size="4"><%= link_to 'Edit', edit_pet_path(pet) %></font></td>
+        <td><font size="4"><%= link_to 'Destroy',
                                 pet_path(pet),
                                 method: :delete,
-                                data: {confirm: 'Are you sure?' } %></td>
+                                data: {confirm: 'Are you sure?' } %></font></td>
       </tr>
     <% end %>
   </table>
