@@ -58,12 +58,14 @@
     <%= @pet.city %>
 </p>
 
+<div class="showComment">
+    <h2>Comments</h2>
+    <%= render @pet.comments %>
+</div>
 
-<h2>Comments</h2>
-<%= render @pet.comments %>
-
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
-
+<div class="addComment">
+    <h2>Add a comment:</h2>
+    <%= render 'comments/form' %>
+</div>
 
 <td><%= link_to 'Pet List', pets_path %></td>

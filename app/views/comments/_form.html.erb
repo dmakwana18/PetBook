@@ -1,17 +1,21 @@
 <%= form_for([@pet, @pet.comments.build]) do |f| %>
+<div class="commenter">
     <p>
         <%= f.label :commenter %><br>
         <%= f.text_field :commenter %>
     </p>
-    
+</div>
+<div class="comment">
     <p>
         <%= f.label :body %><br>
         <%= f.text_area :body %>
         
     </p>
-    
+</div>
+
+<div class="submitComment"
     <p>
         <%= f.submit %>
     </p>
-    
+</div>    
 <% end %>

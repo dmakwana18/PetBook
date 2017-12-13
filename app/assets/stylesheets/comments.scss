@@ -1,3 +1,30 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.commenterHTML {
+    position: absolute;
+    //z-index: 2;
+    top: 240%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    //font-size: 34px;
+}
+
+.commentHTML {
+    position: absolute;
+    //z-index: 2;
+    top: 320%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    //font-size: 34px;
+}
+
+.deleteComment {
+    position: absolute;
+    //z-index: 2;
+    top: 400%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    //font-size: 34px;
+}

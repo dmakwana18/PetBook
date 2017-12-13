@@ -7,6 +7,7 @@
     background-image: url("http://www.desktopwallpaperhd.net/wallpapers/11/7/grassy-hill-ryanstfu-113639.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 1.2;
 }
 
 .back {
@@ -360,4 +361,27 @@ input[type=button], input[type=submit]{
     left: 10%;
     transform: tranlate(-50%,-50%);
     
+}
+
+.showComment {
+    position: absolute;
+    color: black;
+    top: 110%;
+    left: 15%;
+    transform: tranlate(-50%,-50%);
+}
+
+.addComment {
+    position: absolute;
+    color: black;
+    top: 110%;
+    left: 50%;
+    transform: tranlate(-50%,-50%);
+}
+.submitComment {
+    position: absolute;
+    color: black;
+    top: 70%;
+    left: 180%;
+    transform: tranlate(-50%,-50%);
 }
